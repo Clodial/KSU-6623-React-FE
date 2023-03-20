@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { BasicTestComponent, simpleFunction } from './components/basic-test-component';
+import React from 'react';
 
 function App() {
+  console.log(simpleFunction('asdlk fjasdhj asd'));
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <Body>
+      </Body>
+      <Footer></Footer>
     </div>
-  );
+  )
 }
 
 export default App;
